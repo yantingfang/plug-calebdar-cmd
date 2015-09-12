@@ -9224,8 +9224,8 @@ if ( typeof noGlobal === strundefined ) {
 }
 
 
-
-
+//加上这句就可以实现与jquery-1.5.1.js的结果
+window.jQuery = window.$ = jQuery;
 return jQuery;
 
 }));

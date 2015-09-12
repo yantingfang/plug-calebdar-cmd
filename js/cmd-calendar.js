@@ -1,11 +1,9 @@
 //Author:闫亭芳
 define(function(require,exports,module){
-       	require("jquery-1.5.1");
-        // var $=require("jquery-2.1.4");
-       	// exports.$=require("jquery-2.1.4");
+       	//require("jquery-1.5.1");
+        require("jquery-2.1.4");
        	exports.eed=function(){
-//$.fn.extend({
-    jQuery.fn.extend({
+    $.fn.extend({
 	calinitFrame:function(){
 		//"#"+this[0].id,input框的ID
 		var k='<div id="'+this[0].id+'calendar" class="calcont"><div class="calHead"><a class="preMonth" href=javascript:$().calmoveLastMonth("#'+this[0].id+'");></a><span class="currentYearText"><a href=javascript:$().calshowYear("#'+this[0].id+'"); class="currentYear"></a>年</span><span class="currentMonthText"><a href=javascript:$().calshowMonth("#'+this[0].id+'"); class="currentMonth"></a>月</span><a class="nextMonth" href=javascript:$().calmoveNextMonth("#'+this[0].id+'");></a></div><div class="Content"><table class="calContent"><thead><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr></thead><tbody class="monthDate"></tbody></table><table class="yemonthDate"><tbody><tr class="tr"><td><a class="curM">一月</a></td><td><a class="curM">二月</a></td><td><a class="curM">三月</a></td><td><a class="curM">四月</a></td></tr><tr class="tr"><td><a class="curM">五月</a></td><td><a class="curM">六月</a></td><td><a class="curM">七月</a></td><td><a class="curM">八月</a></td></tr><tr class="tr"><td><a class="curM">九月</a></td><td><a class="curM">十月</a></td><td><a class="curM">十一月</a></td><td><a class="curM">十二月</a></td></tr></tbody></table><table class="yearDate"></table></div></div>';
